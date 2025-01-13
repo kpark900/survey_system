@@ -1,0 +1,26 @@
+remote: error: GH013: Repository rule violations found for refs/heads/main.        
+remote: 
+remote: - GITHUB PUSH PROTECTION        
+remote:   —————————————————————————————————————————        
+remote:     Resolve the following violations before pushing again        
+remote: 
+remote:     - Push cannot contain secrets        
+remote: 
+remote:             
+remote:      (?) Learn how to resolve a blocked push        
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push        
+remote:             
+remote:             
+remote:       —— Google Cloud Service Account Credentials ——————————        
+remote:        locations:        
+remote:          - commit: 89f0d65eafdf6900054562c2d0524ee94e8da0e3        
+remote:            path: serviceAccountKey.json:1        
+remote:             
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.        
+remote:        https://github.com/kpark900/survey_system/security/secret-scanning/unblock-secret/2rY9gDyf06naHb5Bacqzs260Dbr        
+remote:             
+remote: 
+remote: 
+To https://github.com/kpark900/survey_system.git
+ ! [remote rejected] main -> main (push declined due to repository rule violations)
+error: failed to push some refs to 'https://github.com/kpark900/survey_system.git'
