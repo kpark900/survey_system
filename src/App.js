@@ -1,12 +1,12 @@
 // src/App.js
 import React, { useEffect } from 'react';
 import { auth } from './firebase/config.js';
-import { useAuthState } from 'react-firebase-hooks/auth';
+import { useAuthState } from 'react-firebase-hooks';;
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
-import Button from './components/ui/button.js';
-import StudentSurveyView from './components/StudentSurveyView.js';
-import AdminTools from './components/AdminTools.js';
-import { initializeDatabase } from './fire_initialize.js';
+import Button from './components/ui/button.js';;;
+import StudentSurveyView from './views/StudentSurveyView.js';;;
+import AdminTools from './components/AdminTools.js';;;
+import { initializeDatabase } from './firebase/fire_initialize.js';;;
 
 const App = () => {
   const [user, loading, error] = useAuthState(auth);

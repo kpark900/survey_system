@@ -1,26 +1,82 @@
-remote: error: GH013: Repository rule violations found for refs/heads/main.        
-remote: 
-remote: - GITHUB PUSH PROTECTION        
-remote:   —————————————————————————————————————————        
-remote:     Resolve the following violations before pushing again        
-remote: 
-remote:     - Push cannot contain secrets        
-remote: 
-remote:             
-remote:      (?) Learn how to resolve a blocked push        
-remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push        
-remote:             
-remote:             
-remote:       —— Google Cloud Service Account Credentials ——————————        
-remote:        locations:        
-remote:          - commit: 89f0d65eafdf6900054562c2d0524ee94e8da0e3        
-remote:            path: serviceAccountKey.json:1        
-remote:             
-remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.        
-remote:        https://github.com/kpark900/survey_system/security/secret-scanning/unblock-secret/2rY9gDyf06naHb5Bacqzs260Dbr        
-remote:             
-remote: 
-remote: 
-To https://github.com/kpark900/survey_system.git
- ! [remote rejected] main -> main (push declined due to repository rule violations)
-error: failed to push some refs to 'https://github.com/kpark900/survey_system.git'
+
+> survey_system@1.0.0 start
+> webpack serve --mode development
+
+asset bundle.js 3.16 MiB [emitted] (name: main)
+runtime modules 27.5 KiB 14 modules
+modules by path ./node_modules/ 2.85 MiB 57 modules
+modules by path ./src/ 40.5 KiB
+  modules by path ./src/*.js 17.3 KiB 2 modules
+  modules by path ./src/styles/*.css 2.87 KiB
+    ./src/styles/index.css 2.39 KiB [built] [code generated]
+    ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/styles/index.css 492 bytes [built] [code generated]
+  modules by path ./src/firebase/*.js 733 bytes
+    ./src/firebase/config.js 593 bytes [built] [code generated]
+    ./src/firebase/fire_initialize.js 140 bytes [built] [code generated]
+  modules by path ./src/components/ 351 bytes
+    ./src/components/ui/button.js 139 bytes [built] [code generated]
+    ./src/components/AdminTools.js 212 bytes [built] [code generated]
+  ./src/views/StudentSurveyView.js 19.2 KiB [built] [code generated]
+
+ERROR in ./src/App.js 14:0-52
+Module not found: Error: Can't resolve 'react-firebase-hooks' in '/Users/kpro2/projects/survey_system/src'
+resolve 'react-firebase-hooks' in '/Users/kpro2/projects/survey_system/src'
+  Parsed request is a module
+  using description file: /Users/kpro2/projects/survey_system/package.json (relative path: ./src)
+    Field 'browser' doesn't contain a valid alias configuration
+    resolve as module
+      /Users/kpro2/projects/survey_system/src/node_modules doesn't exist or is not a directory
+      looking for modules in /Users/kpro2/projects/survey_system/node_modules
+        single file module
+          using description file: /Users/kpro2/projects/survey_system/package.json (relative path: ./node_modules/react-firebase-hooks)
+            no extension
+              Field 'browser' doesn't contain a valid alias configuration
+              /Users/kpro2/projects/survey_system/node_modules/react-firebase-hooks is not a file
+            .js
+              Field 'browser' doesn't contain a valid alias configuration
+              /Users/kpro2/projects/survey_system/node_modules/react-firebase-hooks.js doesn't exist
+            .jsx
+              Field 'browser' doesn't contain a valid alias configuration
+              /Users/kpro2/projects/survey_system/node_modules/react-firebase-hooks.jsx doesn't exist
+            .esm.js
+              Field 'browser' doesn't contain a valid alias configuration
+              /Users/kpro2/projects/survey_system/node_modules/react-firebase-hooks.esm.js doesn't exist
+        existing directory /Users/kpro2/projects/survey_system/node_modules/react-firebase-hooks
+          using description file: /Users/kpro2/projects/survey_system/node_modules/react-firebase-hooks/package.json (relative path: .)
+            using description file: /Users/kpro2/projects/survey_system/package.json (relative path: ./node_modules/react-firebase-hooks)
+              no extension
+                Field 'browser' doesn't contain a valid alias configuration
+                /Users/kpro2/projects/survey_system/node_modules/react-firebase-hooks is not a file
+              .js
+                Field 'browser' doesn't contain a valid alias configuration
+                /Users/kpro2/projects/survey_system/node_modules/react-firebase-hooks.js doesn't exist
+              .jsx
+                Field 'browser' doesn't contain a valid alias configuration
+                /Users/kpro2/projects/survey_system/node_modules/react-firebase-hooks.jsx doesn't exist
+              .esm.js
+                Field 'browser' doesn't contain a valid alias configuration
+                /Users/kpro2/projects/survey_system/node_modules/react-firebase-hooks.esm.js doesn't exist
+              as directory
+                existing directory /Users/kpro2/projects/survey_system/node_modules/react-firebase-hooks
+                  using description file: /Users/kpro2/projects/survey_system/node_modules/react-firebase-hooks/package.json (relative path: .)
+                    using path: /Users/kpro2/projects/survey_system/node_modules/react-firebase-hooks/index
+                      using description file: /Users/kpro2/projects/survey_system/node_modules/react-firebase-hooks/package.json (relative path: ./index)
+                        no extension
+                          Field 'browser' doesn't contain a valid alias configuration
+                          /Users/kpro2/projects/survey_system/node_modules/react-firebase-hooks/index doesn't exist
+                        .js
+                          Field 'browser' doesn't contain a valid alias configuration
+                          /Users/kpro2/projects/survey_system/node_modules/react-firebase-hooks/index.js doesn't exist
+                        .jsx
+                          Field 'browser' doesn't contain a valid alias configuration
+                          /Users/kpro2/projects/survey_system/node_modules/react-firebase-hooks/index.jsx doesn't exist
+                        .esm.js
+                          Field 'browser' doesn't contain a valid alias configuration
+                          /Users/kpro2/projects/survey_system/node_modules/react-firebase-hooks/index.esm.js doesn't exist
+      /Users/kpro2/projects/node_modules doesn't exist or is not a directory
+      /Users/kpro2/node_modules doesn't exist or is not a directory
+      /Users/node_modules doesn't exist or is not a directory
+      /node_modules doesn't exist or is not a directory
+ @ ./src/index.js 3:0-27 6:45-48
+
+webpack 5.97.1 compiled with 1 error in 840 ms
